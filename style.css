@@ -1,0 +1,97 @@
+:root {
+  --primary: #111152;
+  --secondary: #ffbb00;
+  --background: #636363;
+  --drop-shaddow: rgba(14, 14, 14, 0.747);
+  --text-color: rgb(241, 241, 241);
+  --font-size: 14px;
+  --bolded: 700;
+
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1574907060871-4555aa8aca75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.container {
+  /* margin: 15%; */
+  /* padding: 10rem; */
+  background-color: hsla(240, 67%, 19%, 0.74);
+  display: flex;
+}
+
+.left-column {
+  width: 40vw;
+  display: flex;
+  flex: column;
+  justify-content: center;
+
+}
+
+.right-column {
+  width: 40vw;
+  display: flex;
+  flex: column;
+  justify-content: center;
+}
+
+.awayScore {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 10rem;
+  margin-block: .1rem;
+  background-color: #ffbb008c;
+  color: #ffbb00;
+  border-radius: .7rem;
+}
+
+.homeScore {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 10rem;
+  margin-block: .1rem;
+  background-color: #ffbb008c;
+  color: #ffbb00;
+  border-radius: .7rem;
+}
+
+.awayTeam {
+  font-size: 2.5rem;
+  color: rgb(243, 243, 243);
+  margin-block: .5rem;
+  text-align: center;
+}
+
+.bad-guys {
+  padding: 5rem;
+}
+
+.homeTeam {
+  font-size: 2.5rem;
+  color: rgb(243, 243, 243);
+  margin-block: .5rem;
+  text-align: center;
+}
+
+.good-guys {
+  padding: 5rem;
+}
+
+.btn {
+  width: 4rem;
+  height: 2rem;
+  color: #111152;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.822);
+  border: .1rem solid white;
+  border-radius: .1rem;
+
+}

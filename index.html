@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoreboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+  <header></header>
+
+  <main>
+    <section class="container">
+      <!-- SECTION Bad Guys -->
+      <section class="left-column">
+        <div class="bad-guys">
+          <h3 class="awayTeam">Bad Guys</h3>
+          <p id="awayScore" class="awayScore">00</p>
+          <div class="awayButtons">
+            <div class="positiveButtons">
+              <button id="score+1" onclick="badGuysPlus1()" class="btn">+1</button>
+              <button id="score+3" onclick="badGuysPlus3()" class="btn">+3</button>
+              <button id="score+6" onclick="badGuysPlus6()" class="btn">+6</button>
+            </div>
+            <div class="negativeButtons">
+              <button id="score-1" onclick="badGuysMinus1()" class="btn">-1</button>
+              <button id="score-3" onclick="badGuysMinus3()" class="btn">-3</button>
+              <button id="score-6" onclick="badGuysMinus6()" class="btn">-6</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION Good Guys -->
+      <section class="right-column">
+        <div class="good-guys">
+          <h3 class="homeTeam">Good Guys</h3>
+          <p id="homeScore" class="homeScore">00</p>
+          <div class="homeButtons">
+            <div class="positiveButtons">
+              <button id="score+1" onclick="goodGuysPlus1()" class="btn">+1</button>
+              <button id="score+3" onclick="goodGuysPlus3()" class="btn">+3</button>
+              <button id="score+6" onclick="goodGuysPlus6()" class="btn">+6</button>
+            </div>
+            <div class="negativeButtons">
+              <button id="score-1" onclick="goodGuysMinus1()" class="btn">-1</button>
+              <button id="score-3" onclick="goodGuysMinus3()" class="btn">-3</button>
+              <button id="score-6" onclick="goodGuysMinus6()" class="btn">-6</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION neutral guys -->
+      <!-- <section class="far-right-column hidden">
+        <div class="neutral-guys">
+          <h3 class="neutralTeam">Neutral Guys</h3>
+          <p id="neutralScore">00</p>
+          <div class="neutralButtons">
+            <div class="neutralButtons">
+              <button id="score+1" onclick="neutralGuysPlus1()">+1</button>
+              <button id="score+3" onclick="neutralGuysPlus3()">+3</button>
+              <button id="score+6" onclick="neutralGuysPlus6()">+6</button>
+            </div>
+            <div class="negativeButtons">
+              <button id="score-1" onclick="neutralGuysMinus1()">-1</button>
+              <button id="score-3" onclick="neutralGuysMinus3()">-3</button>
+              <button id="score-6" onclick="neutralGuysMinus6()">-6</button>
+            </div>
+          </div>
+        </div>
+
+      </section> --> -->
+    </section>
+    <!-- SECTION RESET SCORE -->
+    <div class="reset-score">
+      <button id="reset-score" onclick="resetScore()">RESET</button>
+      <button onclick="addTeam()">Add Team</button>
+    </div>
+
+    <script src="Scoreboard.js"></script>
+
+  </main>
+  <footer></footer>
+
+</body>
+
+</html>
